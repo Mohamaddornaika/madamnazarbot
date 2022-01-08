@@ -1,7 +1,4 @@
-const fs = require('fs');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v9');
-const { Message, MessageAttachment, Client, Collection, Intents } = require('discord.js');
+const { Client,  Intents } = require('discord.js');
 require('dotenv').config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 var http = require("http");

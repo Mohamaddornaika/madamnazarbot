@@ -1,4 +1,4 @@
-// Require the necessary discord.js classes
+// Require the necessary discord.js classes wf
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');

@@ -9,6 +9,7 @@ require('dotenv').config();
 const commands = [
     new SlashCommandBuilder().setName('madamnazar').setDescription('Replies with madam nazar location!'),
     new SlashCommandBuilder().setName('snowman').setDescription('Wat snowman loves?'),
+    new SlashCommandBuilder().setName('Fam').setDescription('Fam asshole the rudest rude!!'),
     new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
     new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
 ]

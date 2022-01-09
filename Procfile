@@ -1,1 +1,1 @@
-worker node nazarbotbysnowman.js
+worker: node nazarbotbysnowman.js

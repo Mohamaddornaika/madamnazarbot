@@ -1,6 +1,6 @@
 //wats wrong?
 const { Client,  Intents } = require('discord.js');
-require('dotenv').config();
+//require('dotenv').config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -31,4 +31,4 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(secret.DISCORD_TOKEN);

@@ -31,4 +31,4 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login(secret.DISCORD_TOKEN);
+client.login(env.DISCORD_TOKEN);

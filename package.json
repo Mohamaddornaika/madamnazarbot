@@ -2,7 +2,7 @@
   "name": "nazarbot",
   "version": "1.0.0",
   "description": "",
-  "main": "nazarbotbysnowman.js",
+  "main": "node deploy-commands.js",
   "scripts": {
     "start": "node nazarbotbysnowman.js"
   },

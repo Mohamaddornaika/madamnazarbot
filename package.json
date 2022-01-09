@@ -2,9 +2,9 @@
   "name": "nazarbot",
   "version": "1.0.0",
   "description": "",
-  "main": "deploy-commands.js",
+  "main": "nazarbotbysnowman.js",
   "scripts": {
-    "start": "node nazarbotbysnowman.js -p $PORT"
+    "start": "node nazarbotbysnowman.js"
   },
   "keywords": [],
   "author": "",

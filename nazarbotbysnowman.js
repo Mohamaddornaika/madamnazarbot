@@ -1,4 +1,4 @@
-//wats wrong?
+//wats wro
 const { Client,  Intents } = require('discord.js');
 //require('dotenv').config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));

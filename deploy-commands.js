@@ -15,8 +15,8 @@ const commands = [
     .map(command => command.toJSON());
 // Create a new client instance
 
-const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN);
+const rest = new REST({ version: '9' }).setToken(secret.DISCORD_TOKEN);
 
-rest.put(Routes.applicationGuildCommands(process.env.clientId, process.env.guildId), { body: commands })
+rest.put(Routes.applicationGuildCommands(secret.clientId, secret.guildId), { body: commands })
     .then(() => console.log('Successfully registered application commands.'))
     .catch(console.error);

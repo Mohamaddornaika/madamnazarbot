@@ -5,7 +5,7 @@ const { Routes } = require('discord-api-types/v9');
 
 //const { clientId, guildId, } = require('./config.json');
 require('dotenv').config();
-
+console.log("this is running");
 const commands = [
     new SlashCommandBuilder().setName('madamnazar').setDescription('Replies with madam nazar location!'),
     new SlashCommandBuilder().setName('snowman').setDescription('Wat snowman loves?'),

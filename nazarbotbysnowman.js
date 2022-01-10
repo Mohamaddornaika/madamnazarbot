@@ -101,7 +101,17 @@ client.on('interactionCreate', async interaction => {
 			}
 	} else if (commandName === 'snowman') {
 		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
-	} else if (commandName === 'Fam') {
+	}
+	else if (commandName === 'wogan') {
+		await interaction.reply("<@here>" + message.sender+ "have a wogan!!!!!");
+	} else if (commandName === 'war') {
+		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
+	}else if (commandName === 'won') {
+		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
+	}
+	else if (commandName === 'booter') {
+		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
+	}else if (commandName === 'Fam') {
 		await interaction.reply('Fam_Rude the Noopest of all Noops!!!!!!');
 	}
 	else if (commandName === 'server') {

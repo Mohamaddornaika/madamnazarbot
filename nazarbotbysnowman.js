@@ -75,15 +75,21 @@ client.on('interactionCreate', async interaction => {
 
 			if (mainurl[Nextevent].variation) {
 				var variation = mainurl[Nextevent].variation.replaceAll('_', ' ');
+				if (variation.includes("role")) {
 				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
-				var s2 = variation1.substring(3);
+					var s2 = variation1.substring(3);
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");}
+				var s2 = variation.substring(3);
 				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
 			}
 			else {
 				var variation = mainurl[Nextevent].name.replaceAll('_', ' ');
+				
+				if (variation.includes("role")) {
 				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
-				var s2 = variation1.substring(3);
-
+					var s2 = variation1.substring(3);
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");}
+				var s2 = variation.substring(3);
 				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
 			}
 	} else if (commandName === 'snowman') {

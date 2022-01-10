@@ -78,7 +78,14 @@ client.on('interactionCreate', async interaction => {
 				if (variation.includes("role")) {
 				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
 					var s2 = variation1.substring(3);
-				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");}
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
+				}
+				if (variation.includes("challenge")) {
+				
+				var variation1 = mainurl[Nextevent].variation.replaceAll('challenge', '');
+					var s2 = variation1.substring(3);
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
+				}
 				var s2 = variation.substring(3);
 				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
 			}
@@ -86,7 +93,7 @@ client.on('interactionCreate', async interaction => {
 				var variation = mainurl[Nextevent].name.replaceAll('_', ' ');
 				
 				if (variation.includes("role")) {
-				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
+				var variation1 = mainurl[Nextevent].name.replaceAll('role', '');
 					var s2 = variation1.substring(3);
 				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");}
 				var s2 = variation.substring(3);

@@ -1,5 +1,5 @@
 //this is uploaded it should 
-const { Client,  Intents, Snowflake } = require('discord.js');
+const { Client,  Intents } = require('discord.js');
 //require('dotenv').config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
@@ -103,14 +103,19 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
 	}
 	else if (commandName === 'wogan') {
-		await interaction.reply(  User.id+ "have a wogan!!!!!");
+		await interaction.reply(  "@here join for wogan!!!!!");
 	} else if (commandName === 'war') {
-		await interaction.reply('@here loves GG the most, go away lady!!!!!!');
+		await interaction.reply('@here join for fight!!!!!!');
 	}else if (commandName === 'won') {
-		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
-	}
-	else if (commandName === 'booter') {
-		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
+		await interaction.reply('@here the fight is done GG means good good not gitgude!!!!!!');
+	}else if (commandName === 'showdown') {
+		await interaction.reply('@here they are going to showdowns!!!!!!');
+	}else if (commandName === 'practice') {
+		await interaction.reply('@here anyone wanna practice!!!!!!');
+	}else if (commandName === 'booter') {
+		await interaction.reply('@here there is a booter if any of you wants to leave!!!!!!');
+	}else if (commandName === 'left') {
+		await interaction.reply('@here they left the fight git gude next time!!!!!!');
 	}else if (commandName === 'Fam') {
 		await interaction.reply('Fam_Rude the Noopest of all Noops!!!!!!');
 	}

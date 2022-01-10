@@ -74,20 +74,20 @@ client.on('interactionCreate', async interaction => {
 		if (mainurl[Nextevent])
 
 			if (mainurl[Nextevent].variation) {
-				var variation = mainurl[Nextevent].variation.replaceAll('_', ' ')
-
-				var s2 = variation.substring(3);
-				await interaction.reply(s2 + " in " + minutes + " and " + seconds + " sec");
+				var variation = mainurl[Nextevent].variation.replaceAll('_', ' ');
+				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
+				var s2 = variation1.substring(3);
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
 			}
 			else {
-				var variation = mainurl[Nextevent].name.replaceAll('_', ' ')
+				var variation = mainurl[Nextevent].name.replaceAll('_', ' ');
+				var variation1 = mainurl[Nextevent].variation.replaceAll('role', '');
+				var s2 = variation1.substring(3);
 
-				var s2 = variation.substring(3);
-
-				await interaction.reply(s2 + " in " + minutes + " and " + seconds + " sec");
+				await interaction.reply(s2 + " in " + minutes + " min and " + seconds + " sec");
 			}
 	} else if (commandName === 'snowman') {
-		await interaction.reply('Snowman loves GG, the most go away lady!!!!!!');
+		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
 	} else if (commandName === 'Fam') {
 		await interaction.reply('Fam_Rude the Noopest of all Noops!!!!!!');
 	}

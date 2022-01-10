@@ -19,7 +19,7 @@ client.on('interactionCreate', async interaction => {
 
 		interaction.reply(theurl)
 
-	}else if (commandName === 'FreeRoamEvent') {
+	}else if (commandName === 'freeroamevent') {
 		//let obj = await fetch("https://madam-nazar-location-api.herokuapp.com/location/current");
 		//const myurl = await obj.json();
 

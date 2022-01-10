@@ -1,5 +1,5 @@
 //this is uploaded it should 
-const { Client,  Intents, User } = require('discord.js');
+const { Client,  Intents, Snowflake } = require('discord.js');
 //require('dotenv').config();
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
@@ -103,9 +103,9 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
 	}
 	else if (commandName === 'wogan') {
-		await interaction.reply("<@here>" + User.id+ "have a wogan!!!!!");
+		await interaction.reply(  User.id+ "have a wogan!!!!!");
 	} else if (commandName === 'war') {
-		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
+		await interaction.reply('@here loves GG the most, go away lady!!!!!!');
 	}else if (commandName === 'won') {
 		await interaction.reply('Snowman loves GG the most, go away lady!!!!!!');
 	}
